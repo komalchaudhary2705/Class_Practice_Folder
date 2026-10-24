@@ -9,13 +9,21 @@
     <!-- Bootstrap 5 CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet">
 </head>
+<style>
+    .project-img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+        border-radius: 8px;
+    }
+</style>
 
 <body class="bg-light">
 
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg bg-info">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Practice-Work</a>
+        <div class="container">
+            <a class="navbar-brand" href="#">Komal Kalsoom</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon text-white"></span>
@@ -25,16 +33,26 @@
                     <li class="nav-item">
                         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#services">Services</a>
+                    </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
                             aria-expanded="false">
-                            PracticeWork link
+                            Project Work
                         </a>
                         <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="practice.html">Practice One</a></li>
-                            <li><a class="dropdown-item" href="imageGallery.html">Practice Two</a></li>
-                            <li><a class="dropdown-item" href="products.html">Practice Three</a></li>
+                            <li><a class="dropdown-item" href="practice.html">Project One</a></li>
+                            <li><a class="dropdown-item" href="imageGallery.html">Project Two</a></li>
+                            <li><a class="dropdown-item" href="products.html">Project Three</a></li>
                         </ul>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#contact">Contact</a>
                     </li>
 
                 </ul>
@@ -49,24 +67,28 @@
             <div class="col-12 col-md-7">
 
                 <span class="badge text-bg-info mb-3">
-                    My Learning Journey
+                    My Wok Experiance
                 </span>
 
                 <h1 class="display-4 fw-bold">
-                    Start Your Journey to Become a Full-Stack Developer
+                    My Journey to Become <br>
+                    a Full-Stack Developer
                 </h1>
 
-                <p class="lead text-secondary my-4">
+
+                <p class="lead text-secondary my-4 container para">
                     I am learning web development step by step.
-                    I practice HTML, CSS, Bootstrap, JavaScript,
-                    and later backend development.
+                    I practice HTML, CSS, Bootstrap,
+
+                    JavaScript, and later backend development.
                 </p>
 
-                <a href="#topics" class="btn btn-info btn-lg">
-                    Start Learning
+
+                <a href="#services" class="btn btn-info btn-lg px-5">
+                    Hire Me
                 </a>
 
-                <a href="#projects" class="btn btn-outline-dark btn-lg ms-2">
+                <a href="#projects" class="btn btn-outline-dark btn-lg ms-2 px-4">
                     View Projects
                 </a>
 
@@ -95,117 +117,133 @@
         </div>
     </section>
 
-    <!-- Topics Section -->
-    <section class="container py-5" id="topics">
 
-        <div class="text-center mb-4">
-            <h2 class="fw-bold">What I Am Learning</h2>
-            <p class="text-secondary">
-                The main skills in my web development journey
-            </p>
-        </div>
+    <!-- My Services Section -->
+    <section id="services" class="py-5 bg-light">
+        <div class="container">
 
-        <div class="row g-4">
-
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h4 class="card-title">HTML</h4>
-                        <p class="card-text text-secondary">
-                            Learn webpage structure, headings,
-                            paragraphs, links, images, and forms.
-                        </p>
-                        <span class="badge text-bg-success">Started</span>
-                    </div>
-                </div>
+            <!-- Section Heading -->
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">My Services</h2>
+                <p class="text-secondary">
+                    I provide modern, responsive, and user-friendly web development services.
+                </p>
             </div>
 
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h4 class="card-title">Bootstrap 5</h4>
-                        <p class="card-text text-secondary">
-                            Build responsive layouts using containers,
-                            rows, columns, buttons, and cards.
-                        </p>
-                        <span class="badge text-bg-primary">Practicing</span>
+            <!-- Services Cards -->
+            <div class="row g-4">
+
+                <!-- Service 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4">
+                        <div class="mb-3">
+                            <i class="bi bi-code-slash fs-1 text-primary"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Web Development</h5>
+                            <p class="card-text text-secondary">
+                                I build clean, functional, and modern websites
+                                using HTML, CSS, Bootstrap, and JavaScript.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
-            <div class="col-12 col-md-6 col-lg-4">
-                <div class="card h-100 shadow-sm">
-                    <div class="card-body">
-                        <h4 class="card-title">JavaScript</h4>
-                        <p class="card-text text-secondary">
-                            Learn variables, functions, events,
-                            conditions, and DOM manipulation.
-                        </p>
-                        <span class="badge text-bg-warning">Learning Next</span>
+                <!-- Service 2 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4">
+                        <div class="mb-3">
+                            <i class="bi bi-phone fs-1 text-primary"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Responsive Design</h5>
+                            <p class="card-text text-secondary">
+                                I create responsive layouts that look great
+                                and work smoothly on mobiles, tablets, and desktops.
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
 
+                <!-- Service 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4">
+                        <div class="mb-3">
+                            <i class="bi bi-palette fs-1 text-primary"></i>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title fw-bold">Website Customization</h5>
+                            <p class="card-text text-secondary">
+                                I customize website layouts, colors, typography,
+                                and components to match your needs and style.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
+
 
     <!-- Projects Section -->
-    <section class="container py-5" id="projects">
 
-        <div class="text-center mb-4">
-            <h2 class="fw-bold">My Practice Projects</h2>
-            <p class="text-secondary">
-                Learning by building small projects
-            </p>
-        </div>
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
 
-        <div class="row g-4">
-
-            <div class="col-12 col-md-6">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h4 class="card-title">Bulb On and Off</h4>
-                        <p class="card-text">
-                            Practice JavaScript events and image changes.
-                        </p>
-                        <span class="badge text-bg-secondary">JavaScript Practice</span>
-                    </div>
-                </div>
+            <!-- Section Heading -->
+            <div class="text-center mb-5">
+                <h2 class="fw-bold">My Projects</h2>
+                <p class="text-secondary">
+                    I provide modern, responsive, and user-friendly web development services.
+                </p>
             </div>
 
-            <div class="col-12 col-md-6">
-                <div class="card h-100">
-                    <div class="card-body">
-                        <h4 class="card-title">Product Gallery</h4>
-                        <p class="card-text">
-                            Practice Bootstrap layouts and thumbnail clicks.
-                        </p>
-                        <span class="badge text-bg-secondary">Bootstrap + JavaScript</span>
+            <!-- projects Cards -->
+            <div class="row g-4">
+
+                <!-- project 1 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm 
+                    text-center p-4">
+                        <div class="d-flex flex-column h-100">
+                            <img src="./images/bulb-on.jpg" alt="" class="project-img">
+                            <a href="practice.html"> <button class="btn btn-primary w-100 mt-3">View Project</button></a>
+                        </div>
                     </div>
                 </div>
-            </div>
+                <!-- project 2 -->
 
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm text-center p-4">
+
+                        <div class="d-flex flex-column h-100">
+                            <img src="./images/sport-shoes.jpg" alt="Sports Shoes Project" class="project-img">
+
+                            <a href="./imageGallery.html" class="btn btn-primary w-100 mt-3">
+                                View Project
+                            </a>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- project 3 -->
+                <div class="col-md-6 col-lg-4">
+                    <div class="card h-100 border-0 shadow-sm 
+                    text-center p-4">
+                        <div class="d-flex flex-column h-100">
+                            <img src="./images/headphone.jpg" alt="" class="project-img">
+                            <a href="./products.html"> <button class="btn btn-primary w-100 mt-3">View Project</button></a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
         </div>
     </section>
 
-    <!-- About Section -->
-    <section class="container py-5" id="about">
-        <div class="bg-info-subtle rounded p-4 p-md-5 text-center">
-
-            <h2 class="fw-bold">About My Journey</h2>
-
-            <p class="lead mt-3">
-                My goal is to become a full-stack web developer
-                by learning the fundamentals, practicing regularly,
-                and building useful web applications.
-            </p>
-
-            <a href="#topics" class="btn btn-info">
-                Continue Learning
-            </a>
-
-        </div>
-    </section>
+   
 
     <!-- Footer -->
     <footer class="bg-dark text-white text-center py-4 mt-4">
