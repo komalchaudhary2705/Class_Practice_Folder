@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loops</title>
+</head>
+
+<body>
+
+    <script>
+        console.log("========================")
+        console.log("print array values")
+        console.log("========================")
+        // print array values
+        const arr1 = ["a", "b", "c", "d"]
+        // console.log(arr1[0])
+        // console.log(arr1[1])
+        // console.log(arr1[2])
+        // console.log(arr1[3])
+
+        for (i = 0; i < arr1.length - 1; i++) {
+            console.log(arr1[i])
+        }
+        console.log("========================")
+        console.log("print 1 to 5")
+        console.log("========================")
+        // print 1 to 5
+        for(let i=1; i<=5;i++){
+        console.log(i)
+        }
+        console.log("========================")
+        console.log("loop scope")
+        console.log("========================")
+
+        // loop scope
+        let j = 5;
+        for (let j = 0; j < 10; j++) {
+            console.log("j=", j)
+        }
+        console.log(j)
+        console.log("========================")
+
+        let k = 5;
+        for (k = 0; k < 10; k++) {
+            console.log("k=", k)
+        }
+        console.log(k)
+        console.log(k)
+    </script>
+
+</body>
+
+</html>
