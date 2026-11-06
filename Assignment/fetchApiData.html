@@ -12,7 +12,7 @@
     <div class="container mt-5">
         <h2 class="text-center mb-4">Ecommerce Products</h2>
         <div class="table-responsive">
-            <table class="table table-bordered table-striped table-hover align-middle text-center">
+            <table class="table table-bordered table-striped table-hover text-center">
                 <thead class="table-dark">
                     <tr>
                         <th>ID</th>
@@ -36,24 +36,21 @@
       
         async function fetchProducts() {
          
-                const response = await fetch(
-                    "https://dummyjson.com/products"
-                );
+                const response = await fetch("https://dummyjson.com/products");
 
                 const data = await response.json();
                 const products = data.products;
                 const table = document.getElementById("productTable");
                 table.innerHTML = "";
 
-                products.forEach((product) => {
+                products.map((product) => {
                     table.innerHTML += `
                         <tr>
                             <td>${product.id}</td>
                             <td>
                                 <img src="${product.thumbnail}"
                                 width="60"
-                                height="60"
-                                class="rounded">
+                                height="60">
                             </td>
                             <td>${product.title}</td>
                             <td>${product.category}</td>
